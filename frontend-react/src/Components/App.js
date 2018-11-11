@@ -12,9 +12,11 @@ export class App extends Component {
         <div>
           <Header />
 
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/assignment/" component={Assignment} />
-          <Route path="/login/" component={Login} />
+          <div className="container">
+            <Route path="/" exact component={Dashboard} />
+            <Route path="/assignment/" component={Assignment} />
+            <Route path="/login/" component={Login} />
+          </div>
         </div>
       </Router>
     );

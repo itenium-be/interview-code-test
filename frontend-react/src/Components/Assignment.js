@@ -11,6 +11,8 @@ export class Assignment extends Component {
           <li>After completing an assignment, write down how long it actually took you</li>
         </ul>
 
+        <hr />
+
         <h2>ITENIUM-1: User registration</h2>
         <div>
           Users should be able to create an account with login and password and then later login with these credentials.
@@ -18,7 +20,7 @@ export class Assignment extends Component {
           <b>Tip:</b> The layout can be pretty much the same as the already existing Login.js. Make sure this is DRY!
         </div>
 
-
+        <hr />
 
         <h2>ITENIUM-2: Multiple environments and sensitive data</h2>
         <div>
@@ -31,7 +33,7 @@ export class Assignment extends Component {
           <b>Tip:</b>
         </div>
 
-
+        <hr />
 
         <h2>ITENIUM-3: Dutch translations</h2>
         <div>
@@ -40,8 +42,7 @@ export class Assignment extends Component {
           <b>Tip:</b>
         </div>
 
-
-
+        <hr />
 
         <h2>ITENIUM-4: </h2>
         <div>
