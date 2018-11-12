@@ -11,6 +11,8 @@ export class Login extends Component {
     login(this.state.email, this.state.password).then(isLoggedIn => {
       if (isLoggedIn) {
         this.props.history.push('/');
+      } else {
+        this.setState({loginFailed: true});
       }
     });
   }
@@ -40,6 +42,9 @@ export class Login extends Component {
               onChange={e => this.setState({password: e.target.value})}
             />
           </div>
+          {this.state.loginFailed ? (
+            <div className="text-danger" style={{marginBottom: 10}}>Incorrect credentials</div>
+          ) : null}
           <button
             type="button"
             className="btn btn-primary"

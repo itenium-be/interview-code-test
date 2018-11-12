@@ -1,6 +1,35 @@
 Interview Code Test
 ===================
 
+Install
+-------
+
+```
+cd backend-node
+npm install
+
+cd ../frontend-react
+npm install
+```
+
+
+Start
+-----
+
+Backend:  
+```
+cd backend-node
+npm start
+
+```
+
+Frontend:  
+```
+cd frontend-react
+npm start
+```
+
+
 Delayed Kilo
 ------------
 
