@@ -18,7 +18,7 @@ export class Header extends Component {
 
             <li className="nav-item dropdown" style={{display: 'none'}}>
               <a className="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Language
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a className="dropdown-item" href="/">English</a>

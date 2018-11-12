@@ -1,6 +1,9 @@
 Interview Code Test
 ===================
 
+Delayed Kilo
+------------
+
 Install
 -------
 
@@ -30,8 +33,8 @@ npm start
 ```
 
 
-Delayed Kilo
-------------
+More Images
+-----------
 
 Get images from:
 
