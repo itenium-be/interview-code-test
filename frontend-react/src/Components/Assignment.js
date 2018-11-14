@@ -7,7 +7,7 @@ export class Assignment extends Component {
         <h1>Assignments</h1>
         <ul>
           <li>Before starting an assignment, estimate how long it will take you to complete it</li>
-          <li>Create one (or more) commits with the ticket number prefix (ITENIUM-X) and a descriptive message</li>
+          <li>Create one (or more) commits with the story prefix (ITENIUM-X) and a descriptive message</li>
           <li>After completing an assignment, write down how long it actually took you</li>
           <li>Take the Tips into account!</li>
           <li>The Extra's are some questions we may ask when going through your solutions</li>
@@ -16,7 +16,7 @@ export class Assignment extends Component {
 
         <hr />
 
-        <h3>ITENIUM-1: User registration</h3>
+        <h3>Story ITENIUM-1: User registration</h3>
         <div>
           Users should be able to create an account with login and password and then later login with these credentials.
           An in memory store in the backend is sufficient for this exercise. It is ok if the newly created users are not
@@ -34,7 +34,7 @@ export class Assignment extends Component {
 
         <hr />
 
-        <h3>ITENIUM-2: Multiple environments and sensitive data</h3>
+        <h3>Story ITENIUM-2: Multiple environments and sensitive data</h3>
         <div>
           <ul>
             <li>In the frontend, the backend url is hardcoded (http://localhost:5000)</li>
@@ -56,7 +56,7 @@ export class Assignment extends Component {
 
         <hr />
 
-        <h3>ITENIUM-3: Dutch translations</h3>
+        <h3>Story ITENIUM-3: Dutch translations</h3>
         <div>
           The application is a huge succes and we want to offer it in multiple languages.
           For this exercise, translating a single page (ex: Login.js) is sufficient.
@@ -72,7 +72,7 @@ export class Assignment extends Component {
 
         <hr />
 
-        <h3>ITENIUM-4: More image sources</h3>
+        <h3>Story ITENIUM-4: More image sources</h3>
         <div>
           At this point there are two sources of images: "Random Cats" and "XKCD".
           DelayedKilo being so succesful, it has been decided to add more sources.
