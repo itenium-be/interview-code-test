@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { getImages } from '../services.js';
-import { ImageCard } from './ImageCard.js';
+import { getImages } from '../services';
+import { ImageCard } from './ImageCard';
 
 export class Dashboard extends Component {
   constructor() {

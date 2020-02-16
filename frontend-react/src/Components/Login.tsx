@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { login } from '../services.js';
+import { login } from '../services';
 
 export class Login extends Component {
   constructor() {

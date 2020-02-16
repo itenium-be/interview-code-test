@@ -1,11 +1,11 @@
 import request from 'superagent';
 
 
-function getRandomXkcd() {
+function getRandomXkcd(): Promise<any> {
   return request.get(`http://localhost:5000/api/xkcd`);
 }
 
-export function getImages() {
+export function getImages(): Promise<any> {
   return Promise.all([
     getRandomXkcd(),
   ])
@@ -21,7 +21,7 @@ export function getImages() {
 }
 
 
-export function login(email, password) {
+export function login(email: string, password: string): Promise<boolean> {
   return request
     .post('http://localhost:5000/api/login')
     .send({email, password})
