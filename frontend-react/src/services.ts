@@ -1,11 +1,12 @@
 import request from 'superagent';
+import { IImage } from './models';
 
 
 function getRandomXkcd(): Promise<any> {
   return request.get(`http://localhost:5000/api/xkcd`);
 }
 
-export function getImages(): Promise<any> {
+export function getImages(): Promise<IImage[]> {
   return Promise.all([
     getRandomXkcd(),
   ])

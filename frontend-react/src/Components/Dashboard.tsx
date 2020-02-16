@@ -1,32 +1,28 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getImages } from '../services';
 import { ImageCard } from './ImageCard';
+import { IImage } from '../models';
 
-export class Dashboard extends Component {
-  constructor() {
-    super();
-    this.state = {images: []};
-  }
+export const Dashboard = () => {
+  const [images, setImages] = useState<IImage[]>([]);
 
-  componentDidMount() {
+  useEffect(() => {
     getImages().then(images => {
       console.log('images', images);
-      this.setState({images});
+      setImages(images);
     });
-  }
+  }, []);
 
-  render() {
-    return (
-      <div>
-        <h2>Delayed Kilo</h2>
-        <div className="row">
-          {this.state.images.map(img => (
-            <div className="col-md-6" key={img.src}>
-              <ImageCard img={img} />
-            </div>
-          ))}
-        </div>
+  return (
+    <div>
+      <h2>Delayed Kilo</h2>
+      <div className="row">
+        {images.map(img => (
+          <div className="col-md-6" key={img.src}>
+            <ImageCard img={img} />
+          </div>
+        ))}
       </div>
-    );
-  }
+    </div>
+  );
 }
