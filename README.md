@@ -32,6 +32,8 @@ cd frontend-react
 npm start
 ```
 
+Navigate to `/assignment` once running for the exercises.
+
 
 More Images
 -----------

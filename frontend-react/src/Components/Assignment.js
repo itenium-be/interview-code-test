@@ -74,8 +74,8 @@ export class Assignment extends Component {
 
         <h3>Story ITENIUM-4: More image sources</h3>
         <div>
-          At this point there are two sources of images: "Random Cats" and "XKCD".
-          DelayedKilo being so succesful, it has been decided to add more sources.
+          At this point there are two sources of images: "Unsplash" and "XKCD".
+          DelayedKilo being so successful, it has been decided to add more sources.
           (See README.md for some options - or come up with your own)
 
           <br />
