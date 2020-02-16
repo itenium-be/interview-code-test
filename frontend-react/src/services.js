@@ -1,8 +1,5 @@
 import request from 'superagent';
 
-function getRandomUnsplash() {
-  return request.get(`https://aws.random.cat/meow`);
-}
 
 function getRandomXkcd() {
   return request.get(`http://localhost:5000/api/xkcd`);
@@ -10,7 +7,6 @@ function getRandomXkcd() {
 
 export function getImages() {
   return Promise.all([
-    getRandomUnsplash(),
     getRandomXkcd(),
   ])
   .then(responses => responses.map(res => res.body))
@@ -18,8 +14,8 @@ export function getImages() {
     console.log('imgz', images);
 
     return [
-      {source: 'Unsplash', src: images[0].file},
-      {source: 'XKCD', src: images[1].img, alt: images[1].alt, desc: images[1].transcript, date: `${images[1].day}/${images[1].month}/${images[1].year}`},
+      {source: 'Unsplash', src: 'https://picsum.photos/200'},
+      {source: 'XKCD', src: images[0].img, alt: images[0].alt, desc: images[0].transcript, date: `${images[0].day}/${images[0].month}/${images[0].year}`},
     ];
   });
 }

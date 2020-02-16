@@ -15,5 +15,5 @@ Ik zal optreden als PO: Bij vragen of onduidelijkheden kan je bij mij terecht.
 
 Veel succes!
 
-mvg,
+mvg,  
 Wouter
