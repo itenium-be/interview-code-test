@@ -42,6 +42,5 @@ Get images from:
 
 - Unsplash: https://picsum.photos/
 - XKCD: https://xkcd.com/json.html
-- Avatars: http://avatars.adorable.io/#demo
 - Dogs: https://random.dog/woof.json
 - Foxes: https://randomfox.ca/floof/
