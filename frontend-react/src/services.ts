@@ -27,8 +27,8 @@ export function login(email: string, password: string): Promise<boolean> {
     .post('http://localhost:5000/api/login')
     .send({email, password})
     .set('accept', 'json')
-    .then((err, res) => {
-      console.log('OK', err, res);
+    .then(value => {
+      console.log('OK', value);
       return true;
     }, reason => {
       console.log('ERROR', reason);
