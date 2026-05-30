@@ -1,16 +1,13 @@
 import request from 'superagent';
+import { IImage } from './models';
 
-function getRandomUnsplash() {
-  return request.get(`https://aws.random.cat/meow`);
-}
 
-function getRandomXkcd() {
+function getRandomXkcd(): Promise<any> {
   return request.get(`http://localhost:5000/api/xkcd`);
 }
 
-export function getImages() {
+export function getImages(): Promise<IImage[]> {
   return Promise.all([
-    getRandomUnsplash(),
     getRandomXkcd(),
   ])
   .then(responses => responses.map(res => res.body))
@@ -18,20 +15,20 @@ export function getImages() {
     console.log('imgz', images);
 
     return [
-      {source: 'Unsplash', src: images[0].file},
-      {source: 'XKCD', src: images[1].img, alt: images[1].alt, desc: images[1].transcript, date: `${images[1].day}/${images[1].month}/${images[1].year}`},
+      {source: 'Unsplash', src: 'https://picsum.photos/200'},
+      {source: 'XKCD', src: images[0].img, alt: images[0].alt, desc: images[0].transcript, date: `${images[0].day}/${images[0].month}/${images[0].year}`},
     ];
   });
 }
 
 
-export function login(email, password) {
+export function login(email: string, password: string): Promise<boolean> {
   return request
     .post('http://localhost:5000/api/login')
     .send({email, password})
     .set('accept', 'json')
-    .then((err, res) => {
-      console.log('OK', err, res);
+    .then(value => {
+      console.log('OK', value);
       return true;
     }, reason => {
       console.log('ERROR', reason);
